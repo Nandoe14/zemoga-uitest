@@ -13,6 +13,10 @@ body {
     max-width: 1280px;
 }
 
+h1, h2 {
+    margin-left: -4px;
+}
+
 h1 {
     color: $primary;
     font-size: 60px;
@@ -20,8 +24,22 @@ h1 {
     line-height: 60px;
 }
 
+h2 {
+    color: $secondary;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+}
+
+h3 {
+    color: $primary;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 400;
+}
+
 .container {
     margin: auto;
     padding-left: 10px;
-    width: 1024px;
+    max-width: 1024px;
 }

@@ -32,6 +32,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
+
             <div className="closing-pope">
                 <div className="closing-left-pope">
                     <div className="closing-pope-cont">

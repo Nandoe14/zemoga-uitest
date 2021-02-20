@@ -1,0 +1,76 @@
+#body-home {
+    padding-top: 33px;
+
+    h2 {
+        padding: 39px 0;
+    }
+}
+
+
+/////* Speak Out window */////
+
+.speak-out {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.speakout-becounted {
+    padding: 24px 10px 24px 28px;
+    width: 232px;
+
+    span {
+        color: $grey-light;
+        display: block;
+        width: 232px;
+    }
+
+    span:first-of-type {
+        font-size: 22px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+
+    span:last-of-type {
+        font-size: 37px;
+        line-height: 42px;
+        font-weight: 700;
+    }
+}
+
+.speakout-cont {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 23px;
+        color: $grey-light;
+        font-weight: 300;
+    };
+}
+
+.speakout-close-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+
+    img {
+        cursor: pointer;
+        padding: 0 24px;
+
+        transition: all 0.1s ease;
+
+        &:hover {
+            -webkit-filter: contrast(4);
+                    filter: contrast(4);
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}

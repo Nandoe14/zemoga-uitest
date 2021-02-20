@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "bgVotingBoxes": "https://raw.githubusercontent.com/Nandoe14/zemoga-uitest/main/src/assets/kanye.png",
+            "personName": "Kanye West",
+            "personInfo": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "personTimeOnMonths": 1,
+            "personSector": "Entertainment",
+            "totalVotes": 100,
+            "upVotes": 64,
+            "downVotes": 36
+        },
+        {
+            "bgVotingBoxes": "https://raw.githubusercontent.com/Nandoe14/zemoga-uitest/main/src/assets/mark.png",
+            "personName": "Mark Zuckerberg",
+            "personInfo": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "personTimeOnMonths": 1,
+            "personSector": "Business",
+            "totalVotes": 100,
+            "upVotes": 64,
+            "downVotes": 36
+        },
+        {
+            "bgVotingBoxes": "https://raw.githubusercontent.com/Nandoe14/zemoga-uitest/main/src/assets/cristina.png",
+            "personName": "Cristina Fernández de Kirchner",
+            "personInfo": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "personTimeOnMonths": 1,
+            "personSector": "Politics",
+            "totalVotes": 100,
+            "upVotes": 64,
+            "downVotes": 36
+        },
+        {
+            "bgVotingBoxes": "https://raw.githubusercontent.com/Nandoe14/zemoga-uitest/main/src/assets/malala.png",
+            "personName": "Malala Yousafzai",
+            "personInfo": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "personTimeOnMonths": 1,
+            "personSector": "Entertainment",
+            "totalVotes": 100,
+            "upVotes": 64,
+            "downVotes": 36
+        }
+    ]
+}

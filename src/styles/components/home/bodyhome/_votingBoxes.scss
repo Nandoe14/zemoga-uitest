@@ -1,0 +1,129 @@
+/////* Voting Boxes */////
+
+.voting-boxes {
+    color: $primary;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    h3 {
+        margin-bottom: 3px;
+    }
+}
+
+.voting-box {
+    height: 550px;
+    margin-bottom: 40px;
+    // padding-top: 56.4%;
+    position: relative;
+    width: 492px;
+}
+
+.thumb-container {
+    align-items: center;
+    display: flex;
+    height: 31px;
+    justify-content: center;
+    position: absolute;
+    bottom: 228px;
+    width: 31px;
+    z-index: 3;
+
+    img {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+.voting-box-grad {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.61176) 0%, rgba(0,0,0,0) 100%);
+    height: inherit;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.voting-person-cont {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: flex-end;
+    padding: 0 43px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.voting-person-time {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+.voting-person-info {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+
+.voting-options {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 188px;
+
+    img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .thumb-cont {
+        align-items: center;
+        display: flex;
+        height: 31px;
+        justify-content: center;
+        width: 31px;
+        z-index: 3;
+
+        transition: all 0.1s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+}
+
+button.voting-person-btn {
+    background-color: rgba(0,0,0,0.14901);
+    border: 1px solid $primary;
+    color: $primary;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    outline: none;
+    width: 100px;
+}
+
+
+// Color classes
+
+.thumb-bg-blue {
+    background-color: $thumb-bg-blue;
+}
+
+.thumb-bg-orange {
+    background-color: $thumb-bg-orange;
+}
+
+
+// Element selected classes
+
+.thumb-selected {
+    border: 2px solid $primary;
+}
