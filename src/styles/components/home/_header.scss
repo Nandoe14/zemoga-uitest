@@ -1,0 +1,186 @@
+/* Header styles from the home page */
+
+header {
+    background-image: url(./../../../assets/papa.png);
+    color: $primary;
+    height: 740px;
+    padding: 170px 0 0 0;
+    position: relative;
+
+    h1 {
+        margin-bottom: 25px;
+    }
+}
+
+.header-cont {
+    padding-left: 132px;
+    position: relative;
+
+    > div {
+        overflow: hidden;
+        position: relative;
+        width: 500px;
+    }
+}
+
+.blured-cont-pope {
+    height: 380px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.blured-layer-pope{
+    background-image: url(./../../../assets/papa.png);
+    background-position: -138px -170px;
+    -webkit-filter: blur(18px);
+            filter: blur(18px);
+    height: inherit;
+    position: relative;
+    width: 100%;
+}
+
+.general-info-pope {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 37px 0 32px 34px;
+    z-index: 2;
+}
+
+.first-quest-pope {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+
+.info-pope {
+    width: 400px;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+.wiki-info-pope {
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+
+    span {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-left: 5px;
+        text-decoration: underline;
+    }
+}
+
+.last-quest-pope {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.thumb-panel-pope, .thumb-up-pope, .thumb-down-pope {
+    display: flex;
+    justify-content: center;
+}
+
+.thumb-up-pope, .thumb-down-pope {
+    align-items: center;
+    height: 80px;
+    width: 250px;
+}
+
+.thumb-up-pope {
+    background-color: rgba(28,187,180,0.90196);
+}
+
+.thumb-down-pope {
+    background-color: rgba(255,173,29,0.90196);
+}
+
+.closing-pope {
+    display: flex;
+    justify-content: center;
+    height: 51px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.closing-left-pope {
+    height: inherit;
+    width: 32.5%;
+}
+
+.closing-right-pope {
+    height: inherit;
+    width: 67.5%;
+}
+
+.daysleft-pope-cont, .closing-pope-cont{
+    align-items: center;
+    display: flex;
+    height: inherit;
+
+    span {
+        font-weight: 400;
+    }
+}
+
+.closing-pope-cont {
+    background-color: rgba(112,112,112,0.30196);
+    justify-content: flex-end;
+    // width: calc(100% - 7px);
+
+    .closing-in {
+        font-size: 13px;
+        line-height: 21px;
+        margin-right: 10px;
+        margin-top: 3px;
+    }
+}
+
+.daysleft-pope-cont {
+    background-color: rgba(255,255,255,0.70196);
+    justify-content: flex-start;
+    position: relative;
+
+    .days-left {
+        color: $secondary;
+        font-size: 37px;
+        line-height: 50px;
+        margin-left: 9px;
+    }
+}
+
+// .closing-triangle-cont {
+//     height: inherit;
+//     position: absolute;
+//     width: 7px;
+
+//     .closing-rectangle {
+//         background-color: rgba(255,255,255,0.70196);
+//         height: 20px;
+//         left: -7px;
+//         position: absolute;
+//         width: 100%;
+
+//         &:last-of-type {
+//             bottom: 0;
+//         }
+//     }
+
+//     // .closing-triangle {
+//     //     background-color: rgba(255,255,255,0.70196);
+//     //     height: 10px;
+//     //     left: -10px;
+//     //     position: absolute;
+//     //     top: 10px;
+//     //     transform: rotate(10deg);
+//     //     width: 10px;
+//     // }
+// }
