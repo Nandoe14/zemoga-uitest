@@ -25,7 +25,7 @@
     height: 31px;
     justify-content: center;
     position: absolute;
-    bottom: 228px;
+    bottom: 215px;
     width: 31px;
     z-index: 3;
 
@@ -46,7 +46,7 @@
 .voting-person-cont {
     display: flex;
     flex-direction: column;
-    height: inherit;
+    height: 501px;
     justify-content: flex-end;
     padding: 0 43px;
     position: absolute;
@@ -71,6 +71,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 39px;
     width: 188px;
 
     img {
@@ -80,6 +81,7 @@
 
     .thumb-cont {
         align-items: center;
+        cursor: pointer;
         display: flex;
         height: 31px;
         justify-content: center;
@@ -89,7 +91,30 @@
         transition: all 0.1s ease;
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+    
+    button.voting-person-btn {
+        background-color: rgba(0,0,0,0.14901);
+        border: 1px solid $primary;
+        color: $primary;
+        cursor: pointer;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        outline: none;
+        width: 100px;
+
+        transition: transform 0.1s ease, box-shadow 0.5s ease;
+
+        &:hover {
+            box-shadow: 0px 0px 10px #ffffff78;
         }
 
         &:active {
@@ -98,16 +123,50 @@
     }
 }
 
-button.voting-person-btn {
-    background-color: rgba(0,0,0,0.14901);
-    border: 1px solid $primary;
-    color: $primary;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    outline: none;
-    width: 100px;
+.votes-bar-progress {
+    display: flex;
+    height: 49px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.up-side-progress, .down-side-progress {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    width: 100%;
+
+    span {
+        font-size: 29px;
+        font-weight: 300;
+        line-height: 35px;
+    }
+
+    img {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+.up-side-progress {
+    background-color: $vote-bg-blue;
+    padding-left: 11px;
+
+    img {
+        margin-right: 8px;
+    }
+}
+
+.down-side-progress {
+    background-color: $vote-bg-orange;
+    justify-content: flex-end;
+    padding-right: 11px;
+
+    img {
+        margin-left: 8px;
+    }
 }
 
 
