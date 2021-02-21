@@ -22,6 +22,17 @@ export const BodyHome = () => {
                 <h2>Votes</h2>
 
                 <VotingBoxes />
+
+                <div className="submit-name-cont">
+                    <div className="white-submit-layer">
+                        <div className="submit-name-info">
+                            <p>Is there anyone else you would want us to add?</p>
+                        </div>
+                        <div className="submit-name-button">
+                            <button>Submit a Name</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )

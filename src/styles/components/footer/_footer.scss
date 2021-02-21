@@ -1,0 +1,42 @@
+footer {
+    color: $brown-light;
+    height: 80px;
+    width: 100%;
+
+    a {
+        color: $brown-light;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 19px;
+
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: rgb(34, 17, 17);
+        }
+    }
+
+    ul {
+        align-items: center;
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+    }
+}
+
+.terms, .follow {
+    align-items: center;
+    display: flex;
+    height: inherit;
+}
+
+.terms {
+    width: 100%;
+}
+
+.follow {
+    width: 150px;
+}
+

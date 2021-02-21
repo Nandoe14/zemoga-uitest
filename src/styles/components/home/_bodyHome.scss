@@ -20,7 +20,7 @@
     width: 232px;
 
     span {
-        color: $grey-light;
+        color: $brown-dark;
         display: block;
         width: 232px;
     }
@@ -46,7 +46,7 @@
         font-size: 15px;
         letter-spacing: 0px;
         line-height: 23px;
-        color: $grey-light;
+        color: $brown-dark;
         font-weight: 300;
     };
 }
@@ -72,5 +72,60 @@
         &:active {
             transform: scale(0.9);
         }
+    }
+}
+
+
+/////* Submit a Name window */////
+
+.submit-name-cont {
+    background-image: url(./../../../assets/submit-bg.png);
+    background-position: 0px -225px;
+    background-size: cover;
+    color: $brown-dark;
+    height: 80px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.white-submit-layer {
+    background-color: rgba(255,255,255,0.85098);
+    display: flex;
+    height: inherit;
+    position: absolute;
+    width: 100%;
+}
+
+.submit-name-info, .submit-name-button {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    padding: 0 34px;
+}
+
+.submit-name-info {
+    width: 100%;
+
+    p {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+}
+
+.submit-name-button {
+    
+
+    button {
+        background-color: rgba(255,255,255,0.14901);
+        border: 3px solid $brown-dark;
+        color: $brown-dark;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 400;
+        height: 53px;
+        line-height: 24px;
+        width: 210px;
     }
 }
