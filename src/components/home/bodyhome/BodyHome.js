@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import closeImg from './../../../assets/close.svg'
 import { VotingBoxes } from './VotingBoxes'
 
 export const BodyHome = () => {
+
+    const speakOutWindowRef = useRef(null)
+
+    const handleCloseSpeakOutClick = () => {
+        speakOutWindowRef.current.classList.add('closeSpeakOutWindow')
+    }
+
     return (
         <section id="body-home">
             <div className="container">
-                <div className="speak-out">
+                <div ref={speakOutWindowRef} className="speak-out">
                     <div className="speakout-becounted">
                         <span>Speak out. Be heard.</span>
                         <span>Be counted</span>
@@ -15,7 +22,7 @@ export const BodyHome = () => {
                         <p>Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.</p>
                     </div>
                     <div className="speakout-close-cont">
-                        <img src={closeImg} alt="X" />
+                        <img src={closeImg} alt="X" onClick={handleCloseSpeakOutClick} />
                     </div>
                 </div>
 

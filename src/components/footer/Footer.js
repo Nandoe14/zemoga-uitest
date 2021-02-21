@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import facebookImg from './../../assets/facebook.png'
 import twitterImg from './../../assets/twitter.png'
 
@@ -12,13 +13,13 @@ export const Footer = () => {
                 <div className="terms">
                     <ul>
                         <li>
-                            <a href="/terms">Terms and Conditions</a>
+                            <Link to="/terms">Terms and Conditions</Link>
                         </li>
                         <li>
-                            <a href="/privacy">Privacy Policy</a>
+                            <Link to="/privacy">Privacy Policy</Link>
                         </li>
                         <li>
-                            <a href="/contact-us">Contact Us</a>
+                            <Link to="/contact-us">Contact Us</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,4 @@
 #body-home {
-    padding-top: 33px;
 
     h2 {
         padding: 39px 0;
@@ -13,10 +12,18 @@
     background-color: #ebebeb;
     display: flex;
     justify-content: center;
+    height: 100px;
+    margin-top: 33px;
+    overflow: hidden;
+
+    transition: all 0.4s ease;
 }
 
 .speakout-becounted {
-    padding: 24px 10px 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px 0 28px;
     width: 232px;
 
     span {
@@ -39,27 +46,31 @@
 }
 
 .speakout-cont {
-    display: flex;
     align-items: center;
+    color: $brown-dark;
+    display: flex;
+
+    p {
+        font-size: 15px;
+        line-height: 23px;
+        font-weight: 300;
+    }
 
     span {
-        font-size: 15px;
-        letter-spacing: 0px;
-        line-height: 23px;
-        color: $brown-dark;
+        font-size: 22px;
+        line-height: 26px;
         font-weight: 300;
-    };
+    }
 }
 
 .speakout-close-cont {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    width: 65px;
 
     img {
         cursor: pointer;
-        padding: 0 24px;
+        padding: 0 24px 0 15px;
 
         transition: all 0.1s ease;
 
@@ -76,7 +87,7 @@
 }
 
 
-/////* Submit a Name window */////
+/////* Submit a "Name" window */////
 
 .submit-name-cont {
     background-image: url(./../../../assets/submit-bg.png);
@@ -128,4 +139,20 @@
         line-height: 24px;
         width: 210px;
     }
+}
+
+
+// Transition classes
+
+// .closeSpeakOutWindow {
+//     height: 0!important;
+//     margin-top: 0!important;
+// }
+
+
+// Animated classes 
+
+.closeSpeakOutWindow {
+    -webkit-animation: closeSpeakOutWindow $animSpeakOutWindow ease 1 forwards;
+            animation: closeSpeakOutWindow $animSpeakOutWindow ease 1 forwards;
 }

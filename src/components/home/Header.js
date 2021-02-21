@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import wikiImage from './../../assets/wiki.svg'
 import thumbUpImage from './../../assets/thumb-up.svg'
 import thumbDownImage from './../../assets/thumb-down.svg'
@@ -6,7 +7,6 @@ import thumbDownImage from './../../assets/thumb-down.svg'
 export const Header = () => {
     return (
         <header>
-            <div className="gradient-top"></div>
             <div className="header-cont">
                 <div>
                     <div className="blured-cont-pope">
@@ -19,7 +19,7 @@ export const Header = () => {
                         <p className="info-pope">He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)</p>
                         <div className="wiki-info-pope">
                             <img src={wikiImage} alt="W" />
-                            <span>More information</span>
+                            <Link to="/information-pope">More information</Link>
                         </div>
                         <span className="last-quest-pope">What’s Your Verdict?</span>
                     </div>
