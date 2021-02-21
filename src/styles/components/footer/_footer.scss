@@ -7,6 +7,7 @@ footer {
         color: $brown-light;
         font-size: 12px;
         font-weight: 300;
+        height: inherit;
         line-height: 19px;
 
         transition: color 0.2s ease;
@@ -21,9 +22,14 @@ footer {
         display: flex;
     }
 
-    .container {
+    .container.footer-container {
         display: flex;
+        height: inherit;
     }
+}
+
+.dot-separator {
+    border-top: 1px dashed #979797;
 }
 
 .terms, .follow {
@@ -34,9 +40,36 @@ footer {
 
 .terms {
     width: 100%;
+
+    li {
+        margin-right: 20px;
+    }
 }
 
 .follow {
     width: 150px;
+    
+    img {
+        vertical-align: middle;
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    li {
+        white-space: nowrap;
+        margin-right: 22px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+
+    .follow-us {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 19px;
+    }
 }
 

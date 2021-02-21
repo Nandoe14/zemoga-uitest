@@ -6,6 +6,7 @@ import thumbDownImage from './../../assets/thumb-down.svg'
 export const Header = () => {
     return (
         <header>
+            <div className="gradient-top"></div>
             <div className="header-cont">
                 <div>
                     <div className="blured-cont-pope">

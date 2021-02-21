@@ -6,6 +6,9 @@ export const Footer = () => {
     return (
         <footer>
             <div className="container">
+                <div className="dot-separator"></div>
+            </div>
+            <div className="container footer-container">
                 <div className="terms">
                     <ul>
                         <li>
@@ -21,14 +24,14 @@ export const Footer = () => {
                 </div>
                 <div className="follow">
                     <ul>
-                        <li>Follow Us</li>
+                        <li className="follow-us">Follow Us</li>
                         <li>
-                            <a href="www.facebook.com" target="_blank">
+                            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                                 <img src={facebookImg} alt="Facebook" />
                             </a>
                         </li>
                         <li>
-                            <a href="www.twitter.com" target="_blank">
+                            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
                                 <img src={twitterImg} alt="Twitter" />
                             </a>
                         </li>

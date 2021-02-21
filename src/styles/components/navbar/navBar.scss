@@ -1,0 +1,72 @@
+#navbar-desktop {
+    color: $primary;
+    height: 100px;
+    max-width: 1280px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+    .container {
+        display: flex;
+        height: inherit;
+        z-index: 2;
+    }
+}
+
+.logo-cont {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    width: 100%;
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    height: inherit;
+    width: 804px;
+
+    ul {
+        align-items: center;
+        display: flex;
+        height: inherit;
+
+        li {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+    
+            a {
+                color: $primary;
+                padding: 0 26px;
+
+                transition: all 0.2s ease;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.541);
+                }
+            }
+        }
+    }
+}
+
+.menu-search {
+    align-items: center;
+    display: flex;
+    height: inherit;
+
+    img {
+        cursor: pointer;
+        padding-left: 26px;
+
+        transition: all 0.1s linear;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
