@@ -61,22 +61,53 @@
     margin-bottom: 10px;
 }
 
-.voting-person-info {
+.voting-person-info-cont {
+    height: 38px;
+    margin-bottom: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+.voting-person-info, .voting-person-thank {
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 14px;
+    height: inherit;
+    position: absolute;
+
+    transition: all 0.3s ease;
+}
+
+.voting-person-info {
+    opacity: 1;
+}
+
+.voting-person-thank {
+    opacity: 0;
+    top: -40px;
 }
 
 .voting-options {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 39px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
     width: 188px;
 
     img {
         height: 18px;
         width: 18px;
+    }
+
+    .voting-options-cont {
+        align-items: center;
+        display: flex;
+        height: inherit;
+        justify-content: space-between;
+        left: 0;
+        position: absolute;
+        width: inherit;
+
+        transition: left 0.2s ease;
     }
 
     .thumb-cont {
@@ -184,4 +215,20 @@
 
 .thumb-selected {
     border: 2px solid $primary;
+}
+
+
+// Transition classes
+
+.voting-options-again {
+    left: -88px!important;
+}
+
+.hidde-person-info {
+    opacity: 0!important;
+}
+
+.show-person-thank {
+    opacity: 1!important;
+    top: 0!important;
 }

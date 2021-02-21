@@ -4,14 +4,13 @@ import { VotingBox } from './VotingBox'
 
 export const VotingBoxes = () => {
 
-    const data = votingBoxesData.data.map(({ bgVotingBoxes, personName, personInfo, personTimeOnMonths, personSector, totalVotes, upVotes, downVotes }) => {
+    const data = votingBoxesData.data.map(({ bgVotingBoxes, personName, personInfo, personTimeOnMonths, personSector, upVotes, downVotes }) => {
         return {
             bgVotingBoxes,
             personName,
             personInfo,
             personTimeOnMonths,
             personSector,
-            totalVotes,
             upVotes,
             downVotes
         }
