@@ -6,10 +6,16 @@ import twitterImg from './../../assets/twitter.png'
 export const Footer = () => {
     return (
         <footer>
+
+            {/* Dot Separator Line */}
             <div className="container">
                 <div className="dot-separator"></div>
             </div>
+
+            {/* Footer Container */}
             <div className="container footer-container">
+
+                {/* Terms Container */}
                 <div className="terms">
                     <ul>
                         <li>
@@ -23,6 +29,8 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
+
+                {/* Follow Container */}
                 <div className="follow">
                     <ul>
                         <li className="follow-us">Follow Us</li>
@@ -38,6 +46,7 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
+
             </div>
         </footer>
     )

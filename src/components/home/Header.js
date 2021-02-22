@@ -7,6 +7,8 @@ import thumbDownImage from './../../assets/thumb-down.svg'
 export const Header = () => {
     return (
         <header>
+
+            {/* Heder Person Content Window */}
             <div className="header-cont">
                 <div>
                     <div className="blured-cont-pope">
@@ -34,6 +36,7 @@ export const Header = () => {
                 </div>
             </div>
 
+            {/* Closing Time Down Bar */}
             <div className="closing-pope">
                 <div className="closing-left-pope">
                     <div className="closing-pope-cont">
@@ -51,6 +54,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
+
         </header>
     )
 }

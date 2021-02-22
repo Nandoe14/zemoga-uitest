@@ -4,15 +4,17 @@ import { VotingBoxes } from './VotingBoxes'
 
 export const BodyHome = () => {
 
-    const speakOutWindowRef = useRef(null)
+    const speakOutWindowRef = useRef(null) // Handling the Speak Out Window
 
-    const handleCloseSpeakOutClick = () => {
-        speakOutWindowRef.current.classList.add('closeSpeakOutWindow')
+    const handleCloseSpeakOutClick = () => { // Handling the Click event on the "X" from the Speak Out Window
+        speakOutWindowRef.current.classList.add('closeSpeakOutWindow') // Closing the Speak Out Window
     }
 
     return (
         <section id="body-home">
             <div className="container">
+
+                {/* Speak Out Window */}
                 <div ref={speakOutWindowRef} className="speak-out">
                     <div className="speakout-becounted">
                         <span>Speak out. Be heard.</span>
@@ -28,8 +30,10 @@ export const BodyHome = () => {
 
                 <h2>Votes</h2>
 
+                {/* Voting Boxes Panel */}
                 <VotingBoxes />
 
+                {/* Submit Name Window */}
                 <div className="submit-name-cont">
                     <div className="white-submit-layer">
                         <div className="submit-name-info">
@@ -40,6 +44,7 @@ export const BodyHome = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     )
