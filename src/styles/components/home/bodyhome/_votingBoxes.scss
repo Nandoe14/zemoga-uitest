@@ -200,6 +200,22 @@
 }
 
 
+// Transition classes
+
+.voting-options-again {
+    left: -88px!important;
+}
+
+.hidde-person-info {
+    opacity: 0!important;
+}
+
+.show-person-thank {
+    opacity: 1!important;
+    top: 0!important;
+}
+
+
 /* Devices Styles Res: <= 1160px */
 
 @media only screen and (max-width: 1160px) {
@@ -325,6 +341,11 @@
         }
     }
 
+    // Transition classes
+
+    .voting-options-again {
+        left: -65px!important;
+    }
 }
 
 /* Devices Styles Res: < 870px */
@@ -352,20 +373,4 @@
 
 .thumb-selected {
     border: 2px solid $primary;
-}
-
-
-// Transition classes
-
-.voting-options-again {
-    left: -88px!important;
-}
-
-.hidde-person-info {
-    opacity: 0!important;
-}
-
-.show-person-thank {
-    opacity: 1!important;
-    top: 0!important;
 }
