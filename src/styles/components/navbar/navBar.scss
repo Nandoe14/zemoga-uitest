@@ -1,3 +1,12 @@
+/* NavBar styles */
+
+#navbar-mobile {
+    display: none;
+}
+
+
+/////* Desktop NavBar */////
+
 #navbar-desktop {
     color: $primary;
     height: 100px;
@@ -88,5 +97,151 @@
         &:active {
             transform: scale(0.95);
         }
+    }
+}
+
+
+/////* Mobile NavBar */////
+
+#navbar-mobile {
+    background-color: $primary;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+.mob-nav-cont {
+    background-color: $primary;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    padding: 0 26px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+
+    .logo-cont {
+
+        h4 {
+            color: $secondary;
+            font-size: 26px;
+            opacity: 0.9;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.menu-hamburger {
+    align-items: center;
+    display: flex;
+    height: inherit;
+
+    img {
+        cursor: pointer;
+        height: 22px;
+
+        transition: all $hamburgerTime ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+.menu-drop {
+    background-color: $primary;
+    height: 324px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: -388px; // transform to 64px
+    width: 100%;
+    z-index: 1;
+
+    transition: all $dropMenuTime ease;
+
+    .special-a {
+        border-top: 1px solid rgba(128, 128, 128, 0.5);
+    }
+
+    a {
+        align-items: center;
+        color: $secondary;
+        cursor: pointer;
+        display: flex;
+        font-size: 18px;
+        height: 60px;
+        justify-content: center;
+        opacity: 0.9;
+
+        transition: all 0.1s ease;
+
+        &:hover {
+            border: 1px solid rgba(128, 128, 128, 0.5);
+            font-size: 17px;
+            opacity: 0.8;
+        }
+
+        &:active {
+            font-size: 19px;
+        }
+    }
+}
+
+
+// Transform classes
+
+.show-menu-drop {
+    top: 64px!important;
+}
+
+.rotate-hamburger {
+    transform: rotate(180deg) scale(1.05) !important;
+}
+
+/* Devices Styles Res: <= 768px */
+
+@media only screen and (max-width: 768px) {
+
+    #navbar-desktop {
+        display: none;
+    }
+
+    #navbar-mobile {
+        display: block;
+    }
+}
+
+
+/* Devices Styles Res: <= 480px */
+
+@media only screen and (max-width: 480px) {
+    
+    #navbar-mobile {
+        height: 55px;
+    }
+
+    .mob-nav-cont .logo-cont h4 {
+        font-size: 22px;
+    }
+
+    .menu-hamburger {
+    
+        img {
+            height: 20px;
+        }
+    }
+
+    // Transform classes
+
+    .show-menu-drop {
+        top: 55px!important;
     }
 }
