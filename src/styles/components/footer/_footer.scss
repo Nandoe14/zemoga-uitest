@@ -26,6 +26,11 @@ footer {
         display: flex;
         height: inherit;
     }
+
+    .container {
+        max-width: 1055px;
+        padding: 0 15px 0 15px;
+    }
 }
 
 .dot-separator {

@@ -14,7 +14,6 @@
 .voting-box {
     height: 550px;
     margin-bottom: 40px;
-    // padding-top: 56.4%;
     position: relative;
     width: 492px;
 }
@@ -196,6 +195,142 @@
 
     img {
         margin-left: 8px;
+    }
+}
+
+/* Devices Styles Res: < 1100px */
+
+@media only screen and (max-width: 1100px) {
+    #body-home {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+
+
+/* Devices Styles Res: 800px to 1100px and < 586px */
+
+@media only screen and (min-width: 800px) and (max-width: 1160px),
+(max-width: 586px) {
+
+    .voting-boxes {
+        margin: auto;
+        max-width: 769px;
+    
+        h3 {
+            font-size: 34px;
+            line-height: 36px;
+        }
+    }
+
+    .voting-box {
+        background-size: cover;
+        height: 413px;
+        margin-bottom: 30px;
+        width: 369px;
+    }
+    
+    .thumb-container {
+        height: 23px;
+        bottom: 163px;
+        width: 23px;
+    
+        img {
+            height: 13px;
+            width: 13px;
+        }
+    }
+    
+    .voting-person-cont {
+        height: 375px;
+        padding: 0 32px;
+    }
+    
+    .voting-person-time {
+        font-size: 9px;
+        line-height: 10px;
+        margin-bottom: 8px;
+    }
+    
+    .voting-person-info-cont {
+        height: 29px;
+        margin-bottom: 11px;
+    }
+    
+    .voting-person-info, .voting-person-thank {
+        font-size: 12px;
+    }
+    
+    .voting-person-thank {
+        opacity: 0;
+        top: -30px;
+    }
+    
+    .voting-options {
+        margin-bottom: 29px;
+        height: 30px;
+        width: 141px;
+    
+        img {
+            height: 13px;
+            width: 13px;
+        }
+    
+        .thumb-cont {
+            height: 23px;
+            width: 23px;
+        }
+        
+        button.voting-person-btn {
+            height: 30px;
+            font-size: 11px;
+            line-height: 18px;
+            width: 75px;
+        }
+    }
+    
+    .votes-bar-progress {
+        height: 37px;
+    }
+    
+    .up-side-progress, .down-side-progress {
+    
+        span {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    
+        img {
+            height: 21px;
+            width: 21px;
+        }
+    }
+    
+    .up-side-progress {
+        padding-left: 8px;
+    
+        img {
+            margin-right: 6px;
+        }
+    }
+    
+    .down-side-progress {
+        padding-right: 8px;
+    
+        img {
+            margin-left: 6px;
+        }
+    }
+
+}
+
+/* Devices Styles Res: < 800px */
+
+@media only screen and (max-width: 800px) {
+
+    .voting-boxes {
+        justify-content: center;
     }
 }
 
