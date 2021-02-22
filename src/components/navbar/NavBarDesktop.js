@@ -8,7 +8,7 @@ export const NavBarDesktop = () => {
     return (
         <section id="navbar-desktop">
             <div className="gradient-top"></div>
-            <div className="container-wrapper">
+            <div className="container-wrapper animate-navbar">
                 <div className="container">
                     <div className="logo-cont">
                         <Link to="/"><h4>Rule of Thumb.</h4></Link>

@@ -206,6 +206,15 @@
     transform: rotate(180deg) scale(1.05) !important;
 }
 
+
+// Animation classes
+
+.animate-navbar {
+    -webkit-animation: animatenavbar $timeAnimNavBar linear 1 forwards;
+            animation: animatenavbar $timeAnimNavBar linear 1 forwards;
+}
+
+
 /* Devices Styles Res: <= 768px */
 
 @media only screen and (max-width: 768px) {

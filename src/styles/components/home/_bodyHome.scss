@@ -358,6 +358,6 @@
 // Animated classes 
 
 .closeSpeakOutWindow {
-    -webkit-animation: closeSpeakOutWindow $animSpeakOutWindow linear 1 forwards;
-            animation: closeSpeakOutWindow $animSpeakOutWindow linear 1 forwards;
+    -webkit-animation: closeSpeakOutWindow $timeAnimSpeakOutWindow linear 1 forwards;
+            animation: closeSpeakOutWindow $timeAnimSpeakOutWindow linear 1 forwards;
 }

@@ -4,6 +4,7 @@ header {
     background-image: url(./../../../assets/papa.png);
     color: $primary;
     height: 740px;
+    overflow: hidden;
     position: relative;
 
     h1 {
@@ -15,8 +16,13 @@ header {
 /////* Person info element */////
 
 .header-cont {
+    margin-left: -653px;
     padding: 170px 0 0 132px;
     position: relative;
+
+    -webkit-animation: animateheadercont $timeAnimHeaderCont linear 1 forwards;
+
+            animation: animateheadercont $timeAnimHeaderCont linear 1 forwards;
 
     > div {
         overflow: hidden;
@@ -110,12 +116,17 @@ header {
 }
 
 .closing-pope {
+    bottom: 0;
     display: flex;
     justify-content: center;
     height: 51px;
+    margin-left: 1300px;
     position: absolute;
-    bottom: 0;
     width: 100%;
+
+    -webkit-animation: animHeaderCloseBar $timeAnimHeaderCloseBar linear 1 forwards;
+
+            animation: animHeaderCloseBar $timeAnimHeaderCloseBar linear 1 forwards;
 }
 
 .closing-left-pope {
@@ -141,7 +152,6 @@ header {
 .closing-pope-cont {
     background-color: rgba(112,112,112,0.30196);
     justify-content: flex-end;
-    // width: calc(100% - 7px);
 
     .closing-in {
         font-size: 13px;
@@ -162,34 +172,6 @@ header {
         margin-left: 9px;
     }
 }
-
-// .closing-triangle-cont {
-//     height: inherit;
-//     position: absolute;
-//     width: 7px;
-
-//     .closing-rectangle {
-//         background-color: rgba(255,255,255,0.70196);
-//         height: 20px;
-//         left: -7px;
-//         position: absolute;
-//         width: 100%;
-
-//         &:last-of-type {
-//             bottom: 0;
-//         }
-//     }
-
-//     // .closing-triangle {
-//     //     background-color: rgba(255,255,255,0.70196);
-//     //     height: 10px;
-//     //     left: -10px;
-//     //     position: absolute;
-//     //     top: 10px;
-//     //     transform: rotate(10deg);
-//     //     width: 10px;
-//     // }
-// }
 
 
 /* Devices Styles Res: <= 920px */

@@ -19,7 +19,7 @@ export const NavBarMobile = () => {
     }
 
     return (
-        <section id="navbar-mobile">
+        <section className="animate-navbar" id="navbar-mobile">
             <div className="mob-nav-cont">
                 <div className="logo-cont">
                     <Link onClick={handleLogoClick} to="/"><h4>Rule of Thumb.</h4></Link>

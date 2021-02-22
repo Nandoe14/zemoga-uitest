@@ -72,7 +72,7 @@
     height: inherit;
     position: absolute;
 
-    transition: all 0.3s ease;
+    transition: all $timeVotingText ease;
 }
 
 .voting-person-info {
@@ -105,7 +105,7 @@
         position: absolute;
         width: inherit;
 
-        transition: left 0.2s ease;
+        transition: left $timeVotingPanel ease;
     }
 
     .thumb-cont {
@@ -165,6 +165,8 @@
     display: flex;
     height: inherit;
     width: 100%;
+
+    transition: all $timeBarProgress ease;
 
     span {
         font-size: 29px;
