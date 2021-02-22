@@ -14,6 +14,7 @@
     justify-content: center;
     height: 100px;
     margin-top: 33px;
+    min-width: 280px;
     overflow: hidden;
 
     transition: all 0.4s ease;
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 3px;
     padding: 0 10px 0 28px;
     width: 232px;
 
@@ -52,14 +54,15 @@
 
     p {
         font-size: 15px;
-        line-height: 23px;
         font-weight: 300;
+        line-height: 23px;
+        margin-bottom: 3px;
     }
 
     span {
         font-size: 22px;
-        line-height: 26px;
         font-weight: 300;
+        line-height: 26px;
     }
 }
 
@@ -96,6 +99,7 @@
     color: $brown-dark;
     height: 80px;
     margin-bottom: 40px;
+    min-width: 280px;
     position: relative;
     width: 100%;
 }
@@ -112,21 +116,22 @@
     align-items: center;
     display: flex;
     height: inherit;
-    padding: 0 34px;
 }
 
 .submit-name-info {
     width: 100%;
+    padding: 0 0 0 34px;
 
     p {
         font-size: 30px;
         font-weight: 300;
         line-height: 24px;
+        margin-bottom: 3px;
     }
 }
 
 .submit-name-button {
-    
+    padding: 0 34px;
 
     button {
         background-color: rgba(255,255,255,0.14901);
@@ -141,18 +146,218 @@
     }
 }
 
+/* Devices Styles Res: <= 1160px */
 
-// Transition classes
+@media only screen and (max-width: 1160px) {
+    #body-home {
 
-// .closeSpeakOutWindow {
-//     height: 0!important;
-//     margin-top: 0!important;
-// }
+        h2 {
+            font-size: 30px;
+            padding: 29px 0;
+        }
+    }
+}
+
+
+/* Devices Styles Res: <= 799px */
+
+@media only screen and (max-width: 799px) {
+
+    #body-home {
+
+        h2 {
+            font-size: 24px;
+            padding: 20px 0;
+        }
+    }
+
+    /////* Speak Out window */////
+
+    .speak-out {
+        height: 75px;
+        margin-top: 25px;
+    }
+    
+    .speakout-becounted {
+        padding: 0 12px 0 21px;
+        width: 178px;
+    
+        span {
+            width: 174px;
+        }
+    
+        span:first-of-type {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    
+        span:last-of-type {
+            font-size: 28px;
+            line-height: 31px;
+        }
+    }
+    
+    .speakout-cont {
+    
+        p {
+            font-size: 13px;
+            line-height: 17px;
+        }
+    
+        span {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+    
+    .speakout-close-cont {
+    
+        img {
+            padding: 0 18px 0 11px;
+        }
+    }
+
+    
+    /////* Submit a "Name" window */////
+
+    .submit-name-cont {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .submit-name-info {
+        padding: 0 0 0 26px;
+
+        p {
+            font-size: 23px;
+            line-height: 22px;
+        }
+    }
+
+    .submit-name-button {
+        padding: 0 26px;
+
+        button {
+            font-size: 16px;
+            height: 40px;
+            line-height: 18px;
+            width: 158px;
+        }
+    }
+}
+
+
+/* Devices Styles Res: <= 635px */
+
+@media only screen and (max-width: 635px) {
+
+    #body-home {
+
+        h2 {
+            font-size: 22px;
+            padding: 10px 0;
+        }
+    }
+
+    /////* Speak Out window */////
+    
+    .speak-out {
+        height: 66px;
+        margin-top: 19px;
+    }
+    
+    .speakout-becounted {
+        padding: 0 9px 0 16px;
+        width: 128px;
+    
+        span {
+            width: 136px;
+        }
+    
+        span:first-of-type {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    
+        span:last-of-type {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+    
+    .speakout-cont {
+    
+        p {
+            font-size: 12px;
+            line-height: 13px;
+        }
+    
+        span {
+            font-size: 13px;
+            line-height: 15px;
+        }
+    }
+    
+    .speakout-close-cont {
+    
+        img {
+            height: 13px;
+            padding: 0 13px 0 8px;
+        }
+    }
+}
+
+
+/* Devices Styles Res: <= 540px */
+
+@media only screen and (max-width: 540px) {
+
+    /////* Speak Out window */////
+    
+    .speak-out {
+        height: unset;
+    }
+
+    .speakout-cont {
+    
+        p {
+            padding: 10px 0;
+        }
+    }
+
+        
+    /////* Submit a "Name" window */////
+
+    .submit-name-cont {
+        height: 45px;
+        margin-bottom: 22px;
+    }
+
+    .submit-name-info {
+        padding: 0 0 0 12px;
+
+        p {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+
+    .submit-name-button {
+        padding: 0 12px;
+
+        button {
+            font-size: 12px;
+            height: 30px;
+            line-height: 14px;
+            width: 118px;
+        }
+    }
+}
 
 
 // Animated classes 
 
 .closeSpeakOutWindow {
-    -webkit-animation: closeSpeakOutWindow $animSpeakOutWindow ease 1 forwards;
-            animation: closeSpeakOutWindow $animSpeakOutWindow ease 1 forwards;
+    -webkit-animation: closeSpeakOutWindow $animSpeakOutWindow linear 1 forwards;
+            animation: closeSpeakOutWindow $animSpeakOutWindow linear 1 forwards;
 }
